@@ -407,11 +407,10 @@ When using Terraform to create a policy with the [Do Not Inspect](#do-not-inspec
 
 ### Content Categories
 
-| UI name            | API example                                      |
-| ------------------ | ------------------------------------------------ |
-| Content Categories | `not(any(http.conn.content_category[*] in {1}))` |
-
-For more information, refer to our list of [content categories](/cloudflare-one/policies/gateway/domain-categories/#content-categories).
+<Render
+	file="gateway/selectors/net-http-content-categories"
+	params={{ one: "http.conn" }}
+/>
 
 ### Destination Continent
 

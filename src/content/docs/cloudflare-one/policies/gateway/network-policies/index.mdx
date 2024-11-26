@@ -232,11 +232,10 @@ Gateway matches network traffic against the following selectors, or criteria.
 
 ### Content Categories
 
-| UI name            | API example                                |
-| ------------------ | ------------------------------------------ |
-| Content Categories | `any(net.fqdn.content_category[*] in {1})` |
-
-For more information, refer to our list of [content categories](/cloudflare-one/policies/gateway/domain-categories/#content-categories).
+<Render
+	file="gateway/selectors/net-http-content-categories"
+	params={{ one: "net.fqdn" }}
+/>
 
 ### Destination Continent
 
