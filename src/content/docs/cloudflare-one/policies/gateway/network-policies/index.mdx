@@ -284,11 +284,7 @@ To enable Gateway filtering on TCP and UDP, go to **Settings** > **Network** > *
 
 ### Security Risks
 
-| UI name        | API example                                 |
-| -------------- | ------------------------------------------- |
-| Security Risks | `any(net.fqdn.security_category[*] in {1})` |
-
-For more information, refer to our list of [security categories](/cloudflare-one/policies/gateway/domain-categories/#security-categories).
+<Render file="gateway/selectors/security-risks" params={{ one: "net.fqdn" }} />
 
 ### SNI
 
